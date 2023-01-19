@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Арпикон</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="arpicon">
+  <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+
+  <header class="main-header w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sticky-header navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.jpg" width="150" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <div>
+              <a class="main-header__sign-in" href="#">Sign In</a>
+              <a class="main-header__login" href="#">Get started</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Введение -->
+
+    <section class="site-section intro">
+      <div class="container">
+        <div class="row align-items-center justify-content-lg-between site-section__main-content">
+          <div class="col-xl-5 col-lg-5">
+            <h1><span>Арпикон -</span> электронный журнал заявок и <span>CRM</span> для лифтовых компаний</h1>
+            <p> По всем требованиям законов и <span>ГОСТ Р 55964-2022</span></p>
+            <form class="intro__form mt-3 row g-3">
+              <div class="col-auto">
+                <label for="tel" class="visually-hidden">Email</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Укажите номер телефона">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Заказать звонок</button>
+              </div>
+              <span>Бесплатный 14-дневный период</span>
+            </form>
+          </div>
+          <div class="col-xl-7 col-lg-7 mt-4 mt-xl-0">
+            <img src="img/system-preview.png" alt="preview">
+          </div>
+        </div>
+        <div class="row justify-content-center intro__clients">
+          <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <ul class="intro__customer-logos text-center list-unstyled mb-0">
+                    <li>
+                      <img src="img/clients/belg-slm.png" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/dom-uprav.jpg" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/import-lifts.png" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/lift-montage.png" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/lifttech-service.jpg" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item">
+                  <ul class="intro__customer-logos text-center list-unstyled mb-0">
+                    <li>
+                      <img src="img/clients/mlk.png" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/techset.jpg" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/vitehrna.jpg" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/yalk.png" width="150" height="60" class="img-fluid m-auto" alt="image">
+                    </li>
+                    <li>
+                      <img src="img/clients/yarl-lift.png" width="150" class="img-fluid customer-logo-gray p-1 p-md-2 p-lg-2 m-auto">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О компании -->
+
+    <section class="site-section about-company background-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>О компании</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Что мы предлагаем -->
+
+    <section class="site-section service">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Что мы предлагаем</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <ul class="text-center list-unstyled mb-0">
+              <li>
+                <h3 class="h5">Электронный журнал заявок</h3>
+                  <p>Вся история обращений у вас под рукой, ни одна заявка больше не потеряется
+                      Удобная фильтрация, сегментация и поиск по всем полям заявки
+                  </p>
+              </li>
+              <li>
+                <h3 class="h5">Мобильное приложение</h3>
+                  <p>Получение заданий на ремонт, передача отчетов о выполнении, регистрация дефектов, учета наработк и контролируемые показатели.
+                  </p>
+              </li>
+              <li>
+                <h3 class="h5">Модули интеграции</h3>
+                  <p>Система прекрасно интегрируется в IT-ландшафт любого предприятия в т.ч. с диспетчерскими комплексами Объ, Эссан, АСУД - 248
+                  </p>
+              </li>
+              <li>
+                <h3 class="h5">Аналитические отчёты</h3>
+                  <p>Анализируйте базу заявок в разрезе множества разных параметров Стройте аргументированные отчёты для клиентов Принимайте решения на основе фактов
+                  </p>
+              </li>
+              <li>
+                <h3 class="h5">Реалистичное планирование ремонтов и ТО</h3>
+                  <p>Автоматизирован расчет графиков ППР, есть инструменты для формирования развернутого плана работ и бюджета затрат с возможностью оперативной корректировки во время согласования и утверждения.
+                  </p>
+              </li>
+              <li>
+                <h3 class="h5">Информационно-технологическое сопровождение</h3>
+                  <p>Индивидуальное сопровождение с консультациями по использованию системы. Но не только. Наше сопровождение — это, в первую очередь, развитие вашей системы ТОиР, повышение отдачи от ее использования.
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Функции -->
+
+    <section class="site-section functions background-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Функции</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Доп функции -->
+
+    <section class="site-section more-functions background-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Дополнительные Функции</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отчеты и аналитика -->
+
+    <section class="site-section analitics">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Отчеты и аналитика</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Эффективность использования -->
+
+    <section class="site-section efficiency background-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="section-heading text-center">
+              <h2>Эффективность использования</h2>
+              <p> Средние показатели в результате цифровизации процессов управления ремонтами оборудования с помощью Арпикон в лифтовых компаниях </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-sm-12">
+            <ul class="efficiency__list text-center list-unstyled mb-0">
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/decline.svg" width="100" alt="">
+                  <span>15%</span>
+                </div>
+                <p>Сокращение трудозатрат</p>
+              </li>
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/increase.svg" width="100" alt="">
+                  <span>25%</span>
+                </div>
+                <p>Рост производительности труда</p>
+              </li>
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/increase.svg" width="100" alt="">
+                  <span>27%</span>
+                </div>
+                <p>Ускорение обработки заявок</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Этапы внедрения -->
+
+    <section class="site-section stages">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="section-heading text-center">
+              <h2>Этапы внедрения</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5 col-md-12 order-1 order-lg-0">
+            <img src="img/stages.png" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 order-0 order-lg-1">
+            <ul class="stages__list list-unstyled">
+              <li class="stages__item d-flex align-items-start mb-4">
+                <div class="stages__step">
+                  <span class="stages__icon stages__icon--request"></span>
+                </div>
+                <div class="stages__content">
+                  <span>Шаг 1</span>
+                  <h3>Заявка на демо доступ</h3>
+                  <p>Оставьте заявку на сайте и наш консультант свяжется с Вами для уточнения деталей</p>
+                </div>
+              </li>
+              <li class="stages__item d-flex align-items-start mb-4">
+                <div class="stages__step">
+                  <span class="stages__icon stages__icon--agreement"></span>
+                </div>
+                <div class="stages__content">
+                  <span>Шаг 2</span>
+                  <h3>Соглашение о пилотном проекте</h3>
+                  <p>Подписания соглашения о пилотном проекте в рамках конфиденциальности информации, предоставляется бесплатный доступ на 14 календарных дней</p>
+                  <a href="#">Скачать соглашение на пилотный прект</a>
+                </div>
+              </li>
+              <li class="stages__item d-flex align-items-start mb-4">
+                <div class="stages__step">
+                  <span class="stages__icon stages__icon--chat"></span>
+                </div>
+                <div class="stages__content">
+                  <span>Шаг 3</span>
+                  <h3>Взаимодействие в рамках пилотного проекта</h3>
+                  <p>Коллаборация в Telegramm для оперативного взаимодействия сторон, оказания методологической и консультационной поддержки. Обучение сотрудников</p>
+                </div>
+              </li>
+              <li class="stages__item d-flex align-items-start mb-4">
+                <div class="stages__step">
+                  <span class="stages__icon stages__icon--contract"></span>
+                </div>
+                <div class="stages__content">
+                  <span>Шаг 4</span>
+                  <h3>Заключение договора</h3>
+                  <p>После успешного пилотного проекта заключается договор на неопределенный срок сторонами</p>
+                </div>
+              </li>
+              <li class="stages__item d-flex align-items-start mb-4">
+                <div class="stages__step">
+                  <span class="stages__icon stages__icon--support"></span>
+                </div>
+                <div class="stages__content">
+                  <span>Шаг 5</span>
+                  <h3>Поддержка 24/7</h3>
+                  <p>Специалисты осуществляют поддержку системы Арпикон - как консультационную так и технологическую, цель которой - повысить ваш потенциал для роста эффективности работ и управления</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Презентация Демо -->
+
+    <section class="site-section demo background-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <h2>Видео презентация системы <span>Арпикон.Онлайн</span></h2>
+            <p>Вашему вниманию представлен видео ролик о самой системе. <br> Всё ещё сомневаетесь? Запросите демо и мы проведем презентацию специально для вас.</p>
+            <div class="demo__button">
+              <a href="#">Запросить демо</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A6-864mqOA0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тарифы -->
+
+    <section class="site-section price">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>Тарифы</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="site-section faq background-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 col-lg-6">
+            <div class="section-heading text-center">
+              <h2>FAQ</h2>
+              <p> Progressively deploy market positioning catalysts for change and technically sound. Authoritatively with backward-compatible e-services. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Баннер -->
+
+    <section class="site-section banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="banner__section">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-9 col-sm-12">
+                  <div>
+                    <h2>Бесплатный 14-дневный пилотный проект</h2>
+                    <!-- <p>Предоставим демо-доступ для тестирования, чтобы вы оценили все преимущества системы Арпикон.Online</p> -->
+                    <p>Ответим на все Ваши вопросы в процессе тестирования по email: support@arpicon.ru</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <div class="banner__button">
+                    <a href="#">Запросить демо</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Обратная связь (Форма) -->
+
+    <section class="site-section feedback">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-5">
+          <div class="col-md-6 col-sm-12">
+            <div class="section-heading">
+              <h2>Оставьте заявку</h2>
+              <p> Наш сервис – это профессиональный подход и ответственность каждого сотрудника на всех этапах работы. </p>
+            </div>
+            <div class="feedback__contacts">
+              <h3>Контакты</h3>
+              <ul class="feedback__list list-unstyled mb-0">
+                <li class="feedback__item feedback__item--email">
+                  <span></span>
+                  <h4>Наш Email</h4>
+                  <a href="mailto:support@arpicon.ru">support@arpicon.ru</a>
+                </li>
+                <li class="feedback__item feedback__item--phone">
+                  <span></span>
+                  <h4>Наш телефон</h4>
+                  <a href="tel:+79224417711">+7(922)441-7711</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <form class="form" method="post">
+              <div class="form__field">
+                <label class="form__title form__title--fio" for="fio">ФИО <span>*</span></label>
+                <input type="text" name="fio" id="fio" required>
+              </div>
+              <div class="form__field">
+                <label class="form__title form__title--organization" for="organization">Организация <span>*</span></label>
+                <input type="text" name="organization" id="organization" required>
+              </div>
+              <div class="form__field">
+                <label class="form__title form__title--city" for="city">Город <span>*</span></label>
+                <input type="text" name="city" id="city" required>
+              </div>
+              <div class="form__field">
+                <label class="form__title form__title--email" for="email">Email <span>*</span></label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <div class="form__field">
+                <label class="form__title form__title--phone" for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone">
+              </div>
+              <button type="submit">Запросить демо</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__nav">
+      <div class="container">
+        <div class="row justify-content-between footer-nav">
+          <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
+            <img class="mb-4" src="img/logo-white.png" alt="logo">
+            <p>© 2022 ООО «Арпикон»</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
+                <h3>Компания</h3>
+                <ul class="text-center list-unstyled mb-lg-0">
+                  <li><a href="#" class="text-decoration-none">Контакты</a></li>
+                  <li><a href="#" class="text-decoration-none">Реквизиты</a></li>
+                  <li><a href="#" class="text-decoration-none">Политика конфиденциальности</a></li>
+                  <li><a href="#" class="text-decoration-none">Пользовательское соглашение</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
+                <h3>Продукты</h3>
+                <ul class="text-center list-unstyled mb-lg-0">
+                  <li><a href="#" class="text-decoration-none">Арпикон.Онлайн</a></li>
+                  <li><a href="#" class="text-decoration-none">Арпикон.Сервис</a></li>
+                  <li><a href="#" class="text-decoration-none">Арпикон.Монтаж</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-footer__social">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>© 2023 ООО «Центр» ИНН 8602292740 - Арпикон Онлайн. Все права защищены</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <ul class="list-unstyled mb-lg-0 justify-content-center">
+                  <li>
+                    <a href="#">
+                      <img src="img/social/mail.svg" width="25" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/telegram.svg" width="25" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/whatsapp.svg" width="25" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/skype.svg" width="25" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/youtube.svg" width="25" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
