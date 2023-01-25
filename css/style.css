@@ -616,16 +616,16 @@ input {
   background-position: center;
 }
 .about-company__item--happy span {
-  background-image: url("../../img/about-company/happy-users.svg");
+  background-image: url("../img/about-company/happy-users.svg");
 }
 .about-company__item--projects span {
-  background-image: url("../../img/about-company/projects.svg");
+  background-image: url("../img/about-company/projects.svg");
 }
 .about-company__item--team span {
-  background-image: url("../../img/about-company/team.svg");
+  background-image: url("../img/about-company/team.svg");
 }
 .about-company__item--satisfaction span {
-  background-image: url("../../img/about-company/satisfaction.svg");
+  background-image: url("../img/about-company/satisfaction.svg");
 }
 .gallery {
   padding-top: 0;
