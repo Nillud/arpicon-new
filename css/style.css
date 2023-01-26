@@ -652,7 +652,7 @@ input {
   background-color: #e6fafb;
 }
 .about-company__item--satisfaction span {
-  background-image: url("../../img/about-company/satisfaction.svg");
+  background-image: url("../img/about-company/satisfaction.svg");
 }
 .gallery {
   padding-top: 0;
