@@ -71,19 +71,19 @@ input {
   border-radius: 6px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #0065FF;
+  background-color: #5e79ec;
   padding: 10px 20px;
   transition: all 0.6s ease-in-out;
 }
 .main-header .main-header__login:hover {
-  color: #0065FF;
+  color: #5e79ec;
   background-color: #ffffff;
 }
 .site-section {
   padding: 120px 0;
 }
 .site-section h2 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: bold;
 }
 .site-section p {
@@ -108,7 +108,7 @@ input {
 }
 .intro h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 36px;
 }
 .intro p {
   font-size: 18px;
@@ -180,8 +180,8 @@ input {
 .intro ul li {
   padding: 20px;
   border-radius: 16px;
-  border: 2px solid #0065FF;
-  background-color: #f8f9fa;
+  border: 1px solid #e3e8fc;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +189,7 @@ input {
 .intro ul .intro__advantages {
   font-weight: bold;
   font-size: 36px;
-  color: #0065FF;
+  color: #5e79ec;
   margin-right: 15px;
 }
 .intro ul .intro__advantages span {
@@ -270,7 +270,7 @@ input {
 }
 .main-footer {
   padding-top: 120px;
-  background-color: #0065FF;
+  background-color: #5e79ec;
 }
 .main-footer__nav {
   border-bottom: 1px solid #ffffff;
@@ -292,7 +292,7 @@ input {
   color: #ffffff;
 }
 .main-footer__social {
-  background-color: #0065FF;
+  background-color: #5e79ec;
   color: #ffffff;
   padding: 40px 0;
 }
@@ -427,7 +427,7 @@ input {
   text-transform: uppercase;
 }
 .demo h2 span {
-  color: #0065FF;
+  color: #5e79ec;
 }
 .demo p {
   font-size: 20px;
@@ -435,7 +435,7 @@ input {
 }
 .demo__button a {
   padding: 20px;
-  background-color: #0065FF;
+  background-color: #5e79ec;
   border-radius: 10px;
   color: #ffffff;
   text-decoration: none;
@@ -445,7 +445,7 @@ input {
 }
 .demo__button a:hover {
   background-color: #ffffff;
-  color: #0065FF;
+  color: #5e79ec;
 }
 .banner {
   padding-top: 0;
@@ -454,7 +454,7 @@ input {
 .banner__section {
   padding: 40px;
   border-radius: 20px;
-  background-color: #0065FF;
+  background-color: #5e79ec;
   color: #ffffff;
 }
 .banner__section p {
@@ -465,7 +465,7 @@ input {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
-  color: #0065FF;
+  color: #5e79ec;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -490,7 +490,7 @@ input {
 }
 .feedback__contacts li {
   width: 45%;
-  border: 2px solid #0065FF;
+  border: 2px solid #5e79ec;
   border-radius: 20px;
   background-color: #f8f9fa;
   padding: 30px;
@@ -500,7 +500,7 @@ input {
   font-weight: bold;
 }
 .feedback__contacts a {
-  color: #0065FF;
+  color: #5e79ec;
   font-size: 20px;
 }
 .feedback__item span {
@@ -520,13 +520,13 @@ input {
 }
 .form {
   padding: 40px;
-  border: 2px solid #0065FF;
+  border: 2px solid #5e79ec;
   border-radius: 20px;
 }
 .form button {
   border-radius: 50rem;
   border: none;
-  background-color: #0065FF;
+  background-color: #5e79ec;
   color: #ffffff;
   font-weight: bold;
   padding: 10px 28px;
@@ -580,7 +580,7 @@ input {
   background-image: url("../img/form-icons/phone.svg");
 }
 .about-company span {
-  color: #0065FF;
+  color: #5e79ec;
 }
 .about-company ul {
   background-color: #f8f9fa;
@@ -606,23 +606,42 @@ input {
   line-height: 20px;
   margin-bottom: 0;
 }
-.about-company__item span {
+.about-company__item .pic-container {
+  border-radius: 10px;
   display: block;
-  min-width: 80px;
+  width: 80px;
   height: 80px;
   margin-right: 20px;
+  padding: 10px;
+}
+.about-company__item span {
+  display: block;
+  width: 60px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+.about-company__item--happy .pic-container {
+  background-color: #fff0f0;
+}
 .about-company__item--happy span {
-  background-image: url("../../img/about-company/happy-users.svg");
+  background-image: url("../img/about-company/happy-users.svg");
+}
+.about-company__item--projects .pic-container {
+  background-color: #FFFBE6;
 }
 .about-company__item--projects span {
-  background-image: url("../../img/about-company/projects.svg");
+  background-image: url("../img/about-company/projects.svg");
+}
+.about-company__item--team .pic-container {
+  background-color: #EDECFF;
 }
 .about-company__item--team span {
-  background-image: url("../../img/about-company/team.svg");
+  background-image: url("../img/about-company/team.svg");
+}
+.about-company__item--satisfaction .pic-container {
+  background-color: #E6FAFB;
 }
 .about-company__item--satisfaction span {
   background-image: url("../../img/about-company/satisfaction.svg");
