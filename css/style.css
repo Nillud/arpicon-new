@@ -90,7 +90,7 @@ input {
   font-size: 18px;
 }
 .site-section__main-content {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 .section-heading {
   margin-bottom: 50px;
@@ -123,6 +123,15 @@ input {
 }
 .intro__form button {
   padding: 10px 16px;
+  background-color: #5e79ec;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+.intro__form button:hover {
+  color: #5e79ec;
+  background-color: #ffffff;
+  border: 1px solid #5e79ec;
 }
 .intro__form span {
   max-width: 296px;
@@ -270,7 +279,7 @@ input {
 }
 .main-footer {
   padding-top: 120px;
-  background-color: #5e79ec;
+  background: radial-gradient(98.32% 89.32% at 50% -31.76%, #4d5ea5 0, #272d45 100%);
 }
 .main-footer__nav {
   border-bottom: 1px solid #ffffff;
@@ -292,7 +301,6 @@ input {
   color: #ffffff;
 }
 .main-footer__social {
-  background-color: #5e79ec;
   color: #ffffff;
   padding: 40px 0;
 }
@@ -492,7 +500,7 @@ input {
   width: 45%;
   border: 2px solid #5e79ec;
   border-radius: 20px;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   padding: 30px;
 }
 .feedback__contacts h4 {
@@ -627,35 +635,80 @@ input {
 }
 .about-company__item--happy span {
   background-image: url("../img/about-company/happy-users.svg");
-<<<<<<< HEAD
 }
 .about-company__item--projects .pic-container {
-  background-color: #FFFBE6;
+  background-color: #fffbe6;
 }
 .about-company__item--projects span {
   background-image: url("../img/about-company/projects.svg");
 }
 .about-company__item--team .pic-container {
-  background-color: #EDECFF;
+  background-color: #edecff;
 }
 .about-company__item--team span {
   background-image: url("../img/about-company/team.svg");
 }
 .about-company__item--satisfaction .pic-container {
-  background-color: #E6FAFB;
-=======
-}
-.about-company__item--projects span {
-  background-image: url("../img/about-company/projects.svg");
-}
-.about-company__item--team span {
-  background-image: url("../img/about-company/team.svg");
->>>>>>> 84f0e3fa2526b52a9cfabe78e24885c0359e0d69
+  background-color: #e6fafb;
 }
 .about-company__item--satisfaction span {
-  background-image: url("../img/about-company/satisfaction.svg");
+  background-image: url("../../img/about-company/satisfaction.svg");
 }
 .gallery {
   padding-top: 0;
+  padding-bottom: 80px;
+}
+.experience h2 {
+  margin-bottom: 20px;
+}
+.experience__sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #e4e5e7;
+}
+.experience__sections .experience__section {
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.experience__sections .experience__section:not(:last-child) {
+  margin-right: 20px;
+}
+.experience__sections .experience__section--active {
+  color: #5e79ec;
+  border-bottom: 5px solid #5e79ec;
+}
+.experience__sections .experience__section:hover {
+  color: #5e79ec;
+}
+.experience__sections p {
+  display: block;
+  margin-bottom: 0;
+}
+.expirience__cards {
+  padding: 40px 0;
+}
+.expirience__cards .experience__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.expirience__cards .experience__list--not-active {
+  display: none;
+}
+.expirience__cards .experience__list li {
+  border-radius: 20px;
+  background-color: #f6f8fe;
+  padding: 25px;
+}
+.expirience__cards .experience__list h3 {
+  color: #000000;
+  margin: 10px 0 20px;
+}
+.expirience__cards .experience__list .expirience__card-type span {
+  padding: 10px;
+  background-color: #fff0f0;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
