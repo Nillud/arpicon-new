@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   expirienceSections.forEach((section) => {
     section.addEventListener('click', () => {
       closeExperienceSections();
-      section.classList.toggle('experience__section--active');
+      section.classList.add('experience__section--active');
 
       switch (true) {
         case (section.classList.contains('experience__section--updates')) :
