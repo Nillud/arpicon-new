@@ -627,6 +627,7 @@ input {
 }
 .about-company__item--happy span {
   background-image: url("../img/about-company/happy-users.svg");
+<<<<<<< HEAD
 }
 .about-company__item--projects .pic-container {
   background-color: #FFFBE6;
@@ -642,9 +643,17 @@ input {
 }
 .about-company__item--satisfaction .pic-container {
   background-color: #E6FAFB;
+=======
+}
+.about-company__item--projects span {
+  background-image: url("../img/about-company/projects.svg");
+}
+.about-company__item--team span {
+  background-image: url("../img/about-company/team.svg");
+>>>>>>> 84f0e3fa2526b52a9cfabe78e24885c0359e0d69
 }
 .about-company__item--satisfaction span {
-  background-image: url("../../img/about-company/satisfaction.svg");
+  background-image: url("../img/about-company/satisfaction.svg");
 }
 .gallery {
   padding-top: 0;
