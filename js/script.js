@@ -1,42 +1,25 @@
-const expirienceSections = document.querySelectorAll('.experience__section');
-
-const experienceListUpdates = document.querySelector('.experience__list--updates');
-const experienceListArticles = document.querySelector('.experience__list--articles');
-const experienceListReviews = document.querySelector('.experience__list--reviews');
+const experienceSections = document.querySelectorAll('.experience__section');
+const experienceList = document.querySelectorAll('.experience__list');
 
 const closeExperienceSections = () => {
-  expirienceSections.forEach((section) => {
+  experienceSections.forEach((section) => {
     section.classList.remove('experience__section--active');
   });
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  expirienceSections.forEach((section) => {
+  experienceSections.forEach((section) => {
     section.addEventListener('click', () => {
       closeExperienceSections();
       section.classList.add('experience__section--active');
 
-      switch (true) {
-        case (section.classList.contains('experience__section--updates')) :
-          experienceListUpdates.classList.remove('experience__list--not-active');
-          experienceListArticles.classList.add('experience__list--not-active');
-          experienceListReviews.classList.add('experience__list--not-active');
-          break;
-        case (section.classList.contains('experience__section--articles')) :
-          experienceListArticles.classList.remove('experience__list--not-active');
-          experienceListUpdates.classList.add('experience__list--not-active');
-          experienceListReviews.classList.add('experience__list--not-active');
-          break;
-        case (section.classList.contains('experience__section--reviews')) :
-          experienceListReviews.classList.remove('experience__list--not-active');
-          experienceListArticles.classList.add('experience__list--not-active');
-          experienceListUpdates.classList.add('experience__list--not-active');
-          break;
-        default:
-          experienceListArticles.classList.remove('experience__list--not-active');
-          experienceListReviews.classList.remove('experience__list--not-active');
-          experienceListUpdates.classList.remove('experience__list--not-active');
-      }
+      experienceList.forEach((list) => {
+        if (list.dataset.category !== section.dataset.type && section.dataset.type !== 'all') {
+          list.classList.add('experience__list--not-active');
+        } else {
+          list.classList.remove('experience__list--not-active');
+        }
+      });
     });
   });
 });
