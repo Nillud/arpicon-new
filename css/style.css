@@ -47,6 +47,7 @@ input {
 .main-header {
   position: fixed;
   background-color: #ffffff;
+  z-index: 1000;
 }
 .main-header a {
   transition: all 0.6s ease-in-out;
@@ -62,9 +63,17 @@ input {
   margin: 0 auto;
 }
 .main-header .main-header__sign-in {
-  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
   font-weight: bold;
   margin-right: 10px;
+  color: #5e79ec;
+  border: 1px solid #5e79ec;
+}
+.main-header .main-header__sign-in:hover {
+  opacity: 1;
+  background-color: #5e79ec;
+  color: #ffffff;
 }
 .main-header .main-header__login {
   border: none;
@@ -76,7 +85,9 @@ input {
   transition: all 0.6s ease-in-out;
 }
 .main-header .main-header__login:hover {
+  opacity: 1;
   color: #5e79ec;
+  border: 1px solid #5e79ec;
   background-color: #ffffff;
 }
 .site-section {
@@ -114,7 +125,7 @@ input {
   font-size: 18px;
 }
 .intro span {
-  color: #175cff;
+  color: #5e79ec;
 }
 .intro__form input {
   min-width: 280px;
@@ -337,7 +348,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   padding: 48px;
@@ -347,6 +358,9 @@ input {
 }
 .service li:hover {
   box-shadow: 0 10px 30px #0000001a;
+}
+.service li img {
+  margin-bottom: 32px;
 }
 .service li h3 {
   font-weight: bold;
@@ -487,6 +501,7 @@ input {
   justify-content: center;
 }
 .feedback__contacts h3 {
+  text-align: end;
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 30px;
@@ -526,9 +541,34 @@ input {
 .feedback__item--phone span {
   background-image: url("../img/form-icons/phone.svg");
 }
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.feedback p {
+  text-align: center;
+}
+.feedback button {
+  display: block;
+  margin: 0 auto;
+}
+.feedback__button {
+  height: 48px;
+  width: 100%;
+  max-width: 296px;
+  border: 1px solid #5e79ec;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #5e79ec;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.feedback__button:hover {
+  background-color: #5e79ec;
+  color: #ffffff;
+}
 .form {
-  padding: 40px;
-  border: 2px solid #5e79ec;
+  padding: 20px;
   border-radius: 20px;
 }
 .form button {
@@ -552,12 +592,52 @@ input {
   margin-bottom: 5px;
   margin-left: 30px;
 }
-.form__field input {
-  border: 2px solid #dee2e6;
-  border-radius: 6px;
+.form__field input,
+.form__field textarea {
+  border: none;
+  border-bottom: 2px solid #dee2e6;
   font-size: 16px;
   padding: 6px 16px;
   margin-bottom: 5px;
+}
+.form__field input:focus-visible,
+.form__field textarea:focus-visible {
+  outline: none;
+  border-bottom: 2px solid #5e79ec;
+}
+.form__comment label {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.form__comment textarea {
+  padding: 5px;
+}
+.form__radio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form__radio p {
+  width: 100%;
+  font-weight: bold;
+}
+.form__radio label {
+  padding: 6px 10px;
+  margin: 0;
+  border: 2px solid #5e79ec;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #5e79ec;
+  cursor: pointer;
+}
+.form__radio label:not(:last-child) {
+  margin-right: 20px;
+}
+.form__radio label:hover {
+  background-color: #5e79ec;
+  color: #ffffff;
 }
 .form__title span {
   color: #ff0000;
@@ -586,6 +666,20 @@ input {
 }
 .form__title--phone::before {
   background-image: url("../img/form-icons/phone.svg");
+}
+.modal-body {
+  padding: 36px;
+}
+.modal-content {
+  border: none;
+}
+.modal-header {
+  padding-top: 36px;
+  border-bottom: none;
+}
+.modal-header h5 {
+  font-size: 24px;
+  margin: 0 auto;
 }
 .about-company span {
   color: #5e79ec;
@@ -652,7 +746,7 @@ input {
   background-color: #e6fafb;
 }
 .about-company__item--satisfaction span {
-  background-image: url("../../img/about-company/satisfaction.svg");
+  background-image: url("../img/about-company/satisfaction.svg");
 }
 .gallery {
   padding-top: 0;
@@ -710,5 +804,98 @@ input {
   padding: 10px;
   background-color: #fff0f0;
   color: #000000;
+}
+.price {
+  background-color: #f6f8fe;
+}
+.price p {
+  margin: 0;
+  color: #888ca0;
+}
+.price ul {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price li {
+  position: relative;
+  padding: 20px 60px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(143, 154, 210, 0.16);
+}
+.price li h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.price li .price-value {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.price li .rouble {
+  font-size: 22px;
+  font-weight: bold;
+}
+.price li p {
+  margin-top: 10px;
+}
+.price li::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 30%;
+  right: 10%;
+  background-image: url("../img/price-image.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.price-slider {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(183, 195, 247, 0.3);
+  border-radius: 16px;
+}
+.price-slider label {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.price-slider label .period {
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.price-slider label input {
+  transition: all 0.6s ease-in-out;
+}
+.price-slider label .profitable {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 4px 8px;
+  background: linear-gradient(119.24deg, #496af8 -77.56%, #a880ff 14.27%, #ffb470 107.43%);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.price-slider label input:checked + .period {
+  border-radius: 16px;
+  background-color: #5e79ec;
+}
+.price-slider label input:checked + .period + .profitable {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
