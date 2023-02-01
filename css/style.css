@@ -796,6 +796,9 @@ input {
   background-color: #f6f8fe;
   padding: 25px;
 }
+.expirience__cards .experience__list span {
+  color: #5e79ec;
+}
 .expirience__cards .experience__list h3 {
   color: #000000;
   margin: 10px 0 20px;
@@ -896,6 +899,74 @@ input {
   background-color: #5e79ec;
 }
 .price-slider label input:checked + .period + .profitable {
+  display: block;
+}
+.functions {
+  background-color: #171e3a;
+}
+.functions h2 {
+  color: #ffffff;
+}
+.functions__item {
+  position: relative;
+  padding-left: 48px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.functions__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #5e79ec;
+}
+.functions__item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 2px;
+  height: 100%;
+  background-color: #5e79ec;
+}
+.functions__item h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.functions__item p {
+  font-size: 18px;
+  display: none;
+}
+.functions__item a {
+  font-size: 18px;
+  color: #5e79ec;
+  display: none;
+  transition: all 0.6s ease-in-out;
+}
+.functions__item a:hover {
+  transform: scale(1.05);
+}
+.functions__item--active::after {
+  content: "";
+  left: -4px;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(285.34deg, #a4b5ff 24%, #add4ff 72.53%);
+}
+.functions__item--active::before {
+  content: "";
+  left: 10px;
+  height: 100%;
+  background: linear-gradient(285.34deg, #a4b5ff 24%, #add4ff 72.53%);
+}
+.functions__item--active p {
+  display: block;
+}
+.functions__item--active a {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
