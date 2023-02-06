@@ -907,6 +907,10 @@ input {
 .functions h2 {
   color: #ffffff;
 }
+.functions img {
+  max-height: 600px;
+  justify-self: center;
+}
 .functions__item {
   position: relative;
   padding-left: 48px;

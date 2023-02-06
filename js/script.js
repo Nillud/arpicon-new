@@ -26,10 +26,12 @@ const pircesValuesYear = {
 };
 
 const functionImageUrls = {
-  'suggest': 'img/functions/1.png',
-  'functions': 'img/functions/2.jpg',
-  'more-functions': 'img/functions/3.png',
-  'analitic': 'img/functions/4.png'
+  'journal': 'img/functions/1.png',
+  'mobile': 'img/functions/2.png',
+  'modules': 'img/functions/3.png',
+  'analitic': 'img/functions/4.png',
+  'real-plan': 'img/functions/5.png',
+  'info-tech': 'img/functions/6.png'
 }
 
 const closeExperienceSections = () => {
