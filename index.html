@@ -2,888 +2,912 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Арпикон</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="arpicon">
-  <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Арпикон</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="arpicon">
+    <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
-  <header class="main-header w-100">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg sticky-header navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/logo.jpg" width="150" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+    <header class="main-header w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg sticky-header navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/logo.jpg" width="150" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <div>
-              <a class="main-header__sign-in" href="#">Sign In</a>
-              <a class="main-header__login" href="#">Get started</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Введение -->
-
-    <section class="site-section intro">
-      <div class="container">
-        <div class="row align-items-center justify-content-lg-between site-section__main-content">
-          <div class="col-xl-5 col-lg-5">
-            <h1><span>Арпикон -</span> электронный журнал заявок и <span>CRM</span> для лифтовых компаний</h1>
-            <p> По всем требованиям законов и <span>ГОСТ Р 55964-2022</span></p>
-            <form class="intro__form mt-3 row g-3">
-              <div class="col-auto">
-                <label for="tel" class="visually-hidden">Email</label>
-                <input type="tel" class="form-control" id="tel" placeholder="Укажите номер телефона">
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn">Заказать звонок</button>
-              </div>
-              <span>Бесплатный 14-дневный период</span>
-              <span>Быстрый запуск</span>
-              <span>Интеграция с ДК Объ, Эссан</span>
-            </form>
-          </div>
-          <div class="col-xl-7 col-lg-7 mt-4 mt-xl-0">
-            <img src="img/system-preview.png" alt="preview">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <div class="intro__advantages"><span>+</span>50<span>%</span></div>
-                <p>Ускорение в обработке заявок</p>
-              </li>
-              <li>
-                <div class="intro__advantages"><span>+</span>10<span>%</span></div>
-                <p>Повышение эффективности персонала и оборудования</p>
-              </li>
-              <li>
-                <div class="intro__advantages"><span>-</span>10<span>%</span></div>
-                <p>Снижение затрат</p>
-              </li>
-              <li>
-                <div class="intro__advantages">100<span>%</span></div>
-                <p>Контроль и прозрачность</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Слайдер -->
-
-    <section class="site-section gallery">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-12">
-            <div class="text-center">
-              <h2>Нам доверяют более 40 лифтовых компаний</h2>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify">
-          <div class="col-12">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <ul class="intro__customer-logos text-center list-unstyled mb-0">
-                    <li>
-                      <img src="img/clients/belg-slm.png" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/dom-uprav.jpg" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/import-lifts.png" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/lift-montage.png" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/lifttech-service.jpg" class="img-fluid m-auto" alt="image">
-                    </li>
-                  </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Превью</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Что мы предлагаем</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Этапы внедрения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Тарифы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <!-- <div>
+                            <a class="main-header__sign-in" href="#">Sign In</a>
+                            <a class="main-header__login" href="#">Get started</a>
+                        </div> -->
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <ul class="intro__customer-logos text-center list-unstyled mb-0">
-                    <li>
-                      <img src="img/clients/mlk.png" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/techset.jpg" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/vitehrna.jpg" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/yalk.png" class="img-fluid m-auto" alt="image">
-                    </li>
-                    <li>
-                      <img src="img/clients/yarl-lift.png"
-                        class="img-fluid customer-logo-gray p-1 p-md-2 p-lg-2 m-auto">
-                    </li>
-                  </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Введение -->
+
+        <section class="site-section intro">
+            <div class="container">
+                <div class="row align-items-center justify-content-lg-between site-section__main-content">
+                    <div class="col-xl-6  col-lg-6 ">
+                        <h1><span>Арпикон -</span> электронный журнал заявок и <span>CRM</span> для лифтовых компаний</h1>
+                        <p> По всем требованиям законов и <span>ГОСТ Р 55964-2022</span></p>
+                        <div class="intro__footer">
+                            <div class="intro__footer__buttons">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalRequestDemo">Запросить демо</button>
+
+                                <a class="btn" href="files/arpicon-presentation.pdf">Скачать презентацию</a>
+                            </div>
+                            <div class="intro__footer__possibilities">
+                                <span>Бесплатный 14-дневный период</span>
+                                <span>Быстрый запуск</span>
+                                <span>Интеграция с ДК Объ, Эссан</span>
+                            </div>
+                        </div>
+                        <!-- <form class="intro__form mt-3 row g-3">
+                            <div class="col-auto">
+                                <label for="tel" class="visually-hidden">Email</label>
+                                <input type="tel" class="form-control" id="tel" placeholder="Укажите номер телефона">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn">Заказать звонок</button>
+                            </div>
+                        </form> -->
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mt-4 mt-xl-0">
+                        <img src="img/intro.png" height="414" alt="preview">
+                    </div>
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <div class="intro__advantages">233 000+</div>
+                                <p>Заявок</p>
+                            </li>
+                            <li>
+                                <div class="intro__advantages">1 200+</div>
+                                <p>Сотрудников работают в системе</p>
+                            </li>
+                            <li>
+                                <div class="intro__advantages">8 000+</div>
+                                <p>Адресов</p>
+                            </li>
+                            <li>
+                                <div class="intro__advantages">2 000+</div>
+                                <p>Собственников лифтов</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Что мы предлагаем -->
+
+        <section class="site-section what-offer background-light-grey">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2>Что мы предлагаем</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="what-offer__grid">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row justify-content-between">
+                                    <div class="col-6">
+                                        <div class="text-content">
+                                            <h3>Электронный журнал заявок для диспетчера</h3>
+                                            <p>Больше никаких записей в тетрадку — все заявки можно собрать в одном месте.</p>
+                                            <p>Диспетчер ведет учет заявок, назначает механиков и указывает вид технического обслуживания.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="image-content">
+                                            <img src="img/what-offer/offer-1.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-content">
+                                            <h3>Мобильное приложение для механика</h3>
+                                            <p>Механики смогут получать задания на ремонт, передавать отчеты о выполнении работы или создавать заявки самостоятельно</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 align-items-center">
+                                        <div class="image-content image-content-center">
+                                            <img src="img/what-offer/offer-2.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mb-3">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="what-offer__card">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="text-content">
+                                                    <h3>Аналитические отчёты для технического директора</h3>
+                                                    <p>Технические директора смогут анализировать базу заявок и составлять по ним отчетность. Благодаря чему смогут принимать соответсвующие решения</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="image-content">
+                                                    <img src="img/what-offer/offer-3.png" alt="Что мы предлагаем | Электронный журнал">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="what-offer__card">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="text-content">
+                                                    <h3>Реалистичное планирование ремонтов и ТО</h3>
+                                                    <p>Система автоматически расчитывает графики ТО. В дополнении есть инструменты, которые помогут сформировать развернутый план работ и бюджет. Благодаря этому можно оперативно корректировать во время соогласования
+                                                        и утверждения</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="image-content">
+                                                    <img src="img/what-offer/offer-4.png" alt="Что мы предлагаем | Электронный журнал">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-content">
+                                            <h3>Модули интеграции</h3>
+                                            <p>Система интегрируется с другими диспетчерскими системами: например, ЛКДС ОБЬ или ЭССАН. Есть возможность интегрироваться с УК и ТСЖ</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="image-content">
+                                            <img src="img/what-offer/offer-5.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-content">
+                                            <h3>Техподдержка на всех этапах работы</h3>
+                                            <p>Индивидуальное сопровождение с консультациями по использованию системы</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="image-content">
+                                            <img src="img/what-offer/offer-6.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="text-content">
+                                            <h3>QR-коды для лифтов</h3>
+                                            <p>Размещайте QR-коды в лифтах, чтобы жители могли оставлять жалобы напрямую без диспетчера. Заявки напрямую поступают в систему</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="image-content">
+                                            <img src="img/what-offer/offer-7.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 mb-3">
+                            <div class="what-offer__card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="text-content">
+                                            <h3>Электронный паспорт лифта</h3>
+                                            <p>Смотрите данные о каждом лифте в отдельности: тип, марка, адрес и т.д.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="image-content">
+                                            <img src="img/what-offer/offer-8.png" alt="Что мы предлагаем | Электронный журнал">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Эффективность использования -->
+
+        <section class="site-section efficiency">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="section-heading text-center">
+                            <h2>Эффективность использования</h2>
+                            <p> Средние показатели в результате цифровизации процессов управления ремонтами оборудования с помощью Арпикон в лифтовых компаниях </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12">
+                        <ul class="efficiency__list text-center list-unstyled mb-0">
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/decline.svg" width="100" alt="">
+                                    <span>15%</span>
+                                </div>
+                                <p>Сокращение трудозатрат</p>
+                            </li>
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/increase.svg" width="100" alt="">
+                                    <span>25%</span>
+                                </div>
+                                <p>Рост производительности труда</p>
+                            </li>
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/increase.svg" width="100" alt="">
+                                    <span>27%</span>
+                                </div>
+                                <p>Ускорение обработки заявок</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Этапы внедрения -->
+
+        <section class="site-section stages background-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="section-heading text-center">
+                            <h2>Этапы внедрения</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <h3>Заявка на демо доступ</h3>
+                            <p>Оставьте заявку и наш консультант свяжется с вами в течении рабочего дня</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <h3>Подпись соглашения</h3>
+                            <p>Подпишем согласие в рамках конфиденциальности информации. Далее — пробный период на 14 календарных дней</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <h3>Заключение договора</h3>
+                            <p>Когда закончится доступ, а вы захотите продолжить работу в системе — подпишем договор </p>
+                        </li>
+                    </ul>
+
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#ModalRequestDemo">Запросить демо</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Слайдер -->
+
+        <section class="site-section gallery">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2>Нам доверяют более 40 лифтовых компаний</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify">
+                    <div class="col-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <ul class="intro__customer-logos text-center list-unstyled mb-0">
+                                        <li>
+                                            <img src="img/clients/belg-slm.png" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/dom-uprav.jpg" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/import-lifts.png" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/lift-montage.png" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/lifttech-service.jpg" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <ul class="intro__customer-logos text-center list-unstyled mb-0">
+                                        <li>
+                                            <img src="img/clients/mlk.png" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/techset.jpg" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/vitehrna.jpg" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/yalk.png" class="img-fluid m-auto" alt="image">
+                                        </li>
+                                        <li>
+                                            <img src="img/clients/yarl-lift.png" class="img-fluid customer-logo-gray p-1 p-md-2 p-lg-2 m-auto">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- О компании -->
+        <!-- Тарифы -->
 
-    <section class="site-section about-company">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md-12 col-sm-12 col-lg-5">
-            <img src="img/about-company.png" alt="">
-          </div>
-          <div class="col-md-12 col-sm-12 col-lg-6">
-            <div class="section-heading">
-              <h2 class="mb-4"><span>Арпикон</span> - система, которая используется исключительно в <span>лифтовой
-                  отрасли</span></h2>
-              <p> Мы понимаем особенности производственного процесса в лифтовых компаниях. Поэтому, предусмотрели ряд
-                функциональностей, который делают Арпикон оптимальным выбором при поиске решения для внедрения
-                автоматизированных процуессов управления сервисным обслуживанием вертикального транспорта. </p>
-            </div>
-            <ul class="list-unstyled mb-0">
-              <li class="about-company__item about-company__item--happy">
-                <div class="pic-container">
-                  <span></span>
-                </div>
-                <div class="about-company__card-text">
-                  <h3>40+</h3>
-                  <p>Довольных производителей</p>
-                </div>
-              </li>
-              <li class="about-company__item about-company__item--projects">
-                <div class="pic-container">
-                  <span></span>
-                </div>
-                <div class="about-company__card-text">
-                  <h3>56</h3>
-                  <p>Успешных пилотных проектов</p>
-                </div>
-              </li>
-              <li class="about-company__item about-company__item--team">
-                <div class="pic-container">
-                  <span></span>
-                </div>
-                <div class="about-company__card-text">
-                  <h3>6+</h3>
-                  <p>Команда разработки</p>
-                </div>
-              </li>
-              <li class="about-company__item about-company__item--satisfaction">
-                <div class="pic-container">
-                  <span></span>
-                </div>
-                <div class="about-company__card-text">
-                  <h3>97%</h3>
-                  <p>Удовлетворенность пользователей</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section functions">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="section-heading text-center">
-              <h2>Что мы предлагаем</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-5 col-sm-12">
-            <ul class="list-unstyled functions__list">
-              <li class="functions__item functions__item--active" data-function="journal">
-                <h3 class="h5">Электронный журнал заявок</h3>
-                <p>Вся история обращений у вас под рукой, ни одна заявка больше не потеряется
-                  Удобная фильтрация, сегментация и поиск по всем полям заявки
-                </p>
-                <a href="">Подробнее</a>
-              </li>
-              <li class="functions__item" data-function="mobile">
-                <h3 class="h5">Мобильное приложение</h3>
-                <p>Получение заданий на ремонт, передача отчетов о выполнении, регистрация дефектов, учета наработк и
-                  контролируемые показатели.
-                </p><a href="">Подробнее</a>
-              </li>
-              <li class="functions__item" data-function="modules">
-                <h3 class="h5">Модули интеграции</h3>
-                <p>Система прекрасно интегрируется в IT-ландшафт любого предприятия в т.ч. с диспетчерскими комплексами
-                  Объ, Эссан, АСУД - 248
-                </p><a href="">Подробнее</a>
-              </li>
-              <li class="functions__item" data-function="analitic">
-                <h3 class="h5">Аналитические отчёты</h3>
-                <p>Анализируйте базу заявок в разрезе множества разных параметров Стройте аргументированные отчёты для
-                  клиентов Принимайте решения на основе фактов
-                </p><a href="">Подробнее</a>
-              </li>
-              <li class="functions__item" data-function="real-plan">
-                <h3 class="h5">Реалистичное планирование ремонтов и ТО</h3>
-                <p>Автоматизирован расчет графиков ППР, есть инструменты для формирования развернутого плана работ и
-                  бюджета затрат с возможностью оперативной корректировки во время согласования и утверждения.
-                </p><a href="">Подробнее</a>
-              </li>
-              <li class="functions__item" data-function="info-tech">
-                <h3 class="h5">Информационно-технологическое сопровождение</h3>
-                <p>Индивидуальное сопровождение с консультациями по использованию системы. Но не только. Наше
-                  сопровождение — это, в первую очередь, развитие вашей системы ТОиР, повышение отдачи от ее
-                  использования.
-                </p><a href="">Подробнее</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="functions__image" src="img/functions/1.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Эффективность использования -->
-
-    <section class="site-section efficiency background-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="section-heading text-center">
-              <h2>Эффективность использования</h2>
-              <p> Средние показатели в результате цифровизации процессов управления ремонтами оборудования с помощью
-                Арпикон в лифтовых компаниях </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-12 col-sm-12">
-            <ul class="efficiency__list text-center list-unstyled mb-0">
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/decline.svg" width="100" alt="">
-                  <span>15%</span>
-                </div>
-                <p>Сокращение трудозатрат</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/increase.svg" width="100" alt="">
-                  <span>25%</span>
-                </div>
-                <p>Рост производительности труда</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/increase.svg" width="100" alt="">
-                  <span>27%</span>
-                </div>
-                <p>Ускорение обработки заявок</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Этапы внедрения -->
-
-    <section class="site-section stages">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="section-heading text-center">
-              <h2>Этапы внедрения</h2>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-5 col-md-12 order-1 order-lg-0">
-            <img src="img/stages.png" alt="">
-          </div>
-          <div class="col-lg-6 col-md-12 order-0 order-lg-1">
-            <ul class="stages__list list-unstyled">
-              <li class="stages__item d-flex align-items-start mb-4">
-                <div class="stages__step">
-                  <span class="stages__icon stages__icon--request"></span>
-                </div>
-                <div class="stages__content">
-                  <span>Шаг 1</span>
-                  <h3>Заявка на демо доступ</h3>
-                  <p>Оставьте заявку на сайте и наш консультант свяжется с Вами для уточнения деталей</p>
-                </div>
-              </li>
-              <li class="stages__item d-flex align-items-start mb-4">
-                <div class="stages__step">
-                  <span class="stages__icon stages__icon--agreement"></span>
-                </div>
-                <div class="stages__content">
-                  <span>Шаг 2</span>
-                  <h3>Соглашение о пилотном проекте</h3>
-                  <p>Подписания соглашения о пилотном проекте в рамках конфиденциальности информации, предоставляется
-                    бесплатный доступ на 14 календарных дней</p>
-                  <a href="#">Скачать соглашение на пилотный прект</a>
-                </div>
-              </li>
-              <li class="stages__item d-flex align-items-start mb-4">
-                <div class="stages__step">
-                  <span class="stages__icon stages__icon--chat"></span>
-                </div>
-                <div class="stages__content">
-                  <span>Шаг 3</span>
-                  <h3>Взаимодействие в рамках пилотного проекта</h3>
-                  <p>Коллаборация в Telegramm для оперативного взаимодействия сторон, оказания методологической и
-                    консультационной поддержки. Обучение сотрудников</p>
-                </div>
-              </li>
-              <li class="stages__item d-flex align-items-start mb-4">
-                <div class="stages__step">
-                  <span class="stages__icon stages__icon--contract"></span>
-                </div>
-                <div class="stages__content">
-                  <span>Шаг 4</span>
-                  <h3>Заключение договора</h3>
-                  <p>После успешного пилотного проекта заключается договор на неопределенный срок сторонами</p>
-                </div>
-              </li>
-              <li class="stages__item d-flex align-items-start mb-4">
-                <div class="stages__step">
-                  <span class="stages__icon stages__icon--support"></span>
-                </div>
-                <div class="stages__content">
-                  <span>Шаг 5</span>
-                  <h3>Поддержка 24/7</h3>
-                  <p>Специалисты осуществляют поддержку системы Арпикон - как консультационную так и технологическую,
-                    цель которой - повысить ваш потенциал для роста эффективности работ и управления</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Презентация Демо -->
-
-    <section class="site-section demo">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-md-6 col-sm-12">
-            <h2>Видео презентация системы <span>Арпикон.Онлайн</span></h2>
-            <p>Вашему вниманию представлен видео ролик о самой системе. <br> Всё ещё сомневаетесь? Запросите демо и мы
-              проведем презентацию специально для вас.</p>
-            <div class="demo__button">
-              <a href="#">Запросить демо</a>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6 col-sm-12">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/A6-864mqOA0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Тарифы -->
-
-    <section class="site-section price">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 col-lg-12">
-            <div class="section-heading text-center">
-              <h2>Тарифы</h2>
-              <p> Никаких дополнительных платежей за адаптацию и интеграцию </p>
-            </div>
-            <div class="price-slider">
-              <label>
+        <section class="site-section price">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="section-heading text-center">
+                            <h2>Тарифы</h2>
+                            <p> Никаких дополнительных платежей за адаптацию и интеграцию </p>
+                        </div>
+                        <div class="price-slider">
+                            <label>
                 <input class="visually-hidden" type="radio" name="period" id="month" value="month" checked>
                 <span class="period">Месяц</span>
               </label>
-              <label>
+                            <label>
                 <input class="visually-hidden" type="radio" name="period" id="year" value="year">
                 <span class="period">Год</span>
                 <span class="profitable">-25%</span>
               </label>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5>до 500 объектов</h5>
+                                <span class="price-value" data-price="20">20</span><span class="rouble">₽</span>
+                                <p>за 1 объект (лифт) в месяц</p>
+                            </li>
+                            <li>
+                                <h5>до 1000 объектов</h5>
+                                <span class="price-value" data-price="15">15</span><span class="rouble">₽</span>
+                                <p>за 1 объект (лифт) в месяц</p>
+                            </li>
+                            <li>
+                                <h5>до 2000 объектов</h5>
+                                <span class="price-value" data-price="10">10</span><span class="rouble">₽</span>
+                                <p>за 1 объект (лифт) в месяц</p>
+                            </li>
+                            <li>
+                                <h5>3000+ объектов</h5>
+                                <span class="price-value" data-price="8">8</span><span class="rouble">₽</span>
+                                <p>за 1 объект (лифт) в месяц</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="list-unstyled">
-              <li>
-                <h5>до 500 объектов</h5>
-                <span class="price-value" data-price="20">20</span><span class="rouble">₽</span>
-                <p>за 1 объект (лифт) в месяц</p>
-              </li>
-              <li>
-                <h5>до 1000 объектов</h5>
-                <span class="price-value" data-price="15">15</span><span class="rouble">₽</span>
-                <p>за 1 объект (лифт) в месяц</p>
-              </li>
-              <li>
-                <h5>до 2000 объектов</h5>
-                <span class="price-value" data-price="10">10</span><span class="rouble">₽</span>
-                <p>за 1 объект (лифт) в месяц</p>
-              </li>
-              <li>
-                <h5>3000+ объектов</h5>
-                <span class="price-value" data-price="8">8</span><span class="rouble">₽</span>
-                <p>за 1 объект (лифт) в месяц</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="site-section experience">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <h2 class="text-center">Делимся опытом</h2>
-            <ul class="list-unstyled mb-0 experience__sections">
-              <li class="experience__section experience__section--all experience__section--active" data-type="all">
-                <p>Все</p>
-              </li>
-              <li class="experience__section experience__section--updates" data-type="updates">
-                <p>Обновления</p>
-              </li>
-              <li class="experience__section experience__section--articles" data-type="articles">
-                <p>Статьи</p>
-              </li>
-              <li class="experience__section experience__section--reviews" data-type="reviews">
-                <p>Обзоры</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="expirience__cards">
-              <ul class="list-unstyled mb-0 experience__list experience__list--updates" data-category="updates">
-                <li>
-                  <a href="#">
-                    <span>Обновления</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>updates.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Обновления</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>updates.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Обновления</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>updates.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Обновления</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>updates.arpicon</span></div>
-                  </a>
-                </li>
-              </ul>
-              <ul class="list-unstyled mb-0 experience__list experience__list--articles" data-category="articles">
+        <!-- Делимся опытом -->
 
-              </ul>
-              <ul class="list-unstyled mb-0 experience__list experience__list--reviews" data-category="reviews">
-                <li>
-                  <a href="#">
-                    <span>Обзоры</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>reviews.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Обзоры</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>reviews.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Обзоры</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>reviews.arpicon</span></div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>reviews.arpicon</span>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                    <div class="expirience__card-type"><span>reviews.arpicon</span></div>
-                  </a>
-                </li>
-              </ul>
+        <!-- <section class="site-section experience">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="text-center">Делимся опытом</h2>
+                        <ul class="list-unstyled mb-0 experience__sections">
+                            <li class="experience__section experience__section--all experience__section--active" data-type="all">
+                                <p>Все</p>
+                            </li>
+                            <li class="experience__section experience__section--updates" data-type="updates">
+                                <p>Обновления</p>
+                            </li>
+                            <li class="experience__section experience__section--articles" data-type="articles">
+                                <p>Статьи</p>
+                            </li>
+                            <li class="experience__section experience__section--reviews" data-type="reviews">
+                                <p>Обзоры</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="expirience__cards">
+                            <ul class="list-unstyled mb-0 experience__list experience__list--updates" data-category="updates">
+                                <li>
+                                    <a href="#">
+                                        <span>Обновления</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>updates.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Обновления</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>updates.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Обновления</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>updates.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Обновления</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>updates.arpicon</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled mb-0 experience__list experience__list--articles" data-category="articles">
+
+                            </ul>
+                            <ul class="list-unstyled mb-0 experience__list experience__list--reviews" data-category="reviews">
+                                <li>
+                                    <a href="#">
+                                        <span>Обзоры</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>reviews.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Обзоры</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>reviews.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Обзоры</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>reviews.arpicon</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>reviews.arpicon</span>
+                                        <h3>Lorem ipsum, dolor sit amet</h3>
+                                        <div class="expirience__card-type"><span>reviews.arpicon</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section> -->
 
-    <!-- FAQ -->
+        <!-- FAQ -->
 
-    <section class="site-section faq background-light">
-      <div class="container">
-        <div class="row justify-content-between align-items-center mb-5">
-          <div class="col-md-12 col-lg-6">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+        <section class="site-section faq background-light">
+            <div class="container">
+                <div class="row justify-content-between align-items-center mb-5">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Как я могу продлить тестовый доступ?
                   </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Для продления тестового доступа необходимо направить запрос в нашу техническую поддержку. Вы можете связаться с нами по электронной почте или через личный кабинет. В запросе необходимо указать данные учетной записи,
+                                        для которой нужно продлить доступ, и причину продления.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Где я могу найти ссылку для скачивания мобильного приложения?
                   </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                    this being filled with some actual content.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Вы можете скачать наше мобильное приложение на App Store для устройств iOS или на Play Market для устройств Android. Ссылка на приложение также может быть представлена на нашем официальном веб-сайте.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Что включает интеграция с диспетчерскими комплексами и какие преимущества она предоставляет?
                   </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Accordion Item #4
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Интеграция с диспетчерскими комплексами позволяет автоматически перенести структуру лифтов в нашу систему. Это упрощает процесс заполнения справочников и создания заявок, т.к. вся необходимая информация будет уже доступна
+                                        в системе.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Могу ли я подать запрос на доработки системы и как это сделать?
                   </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Accordion Item #5
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Да, вы можете подать запрос на доработки системы через нашу техническую поддержку. Для этого необходимо описать необходимые изменения или новые функциональные возможности, а также объяснить, почему они вам нужны.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Можно ли подключить несколько диспетчерских пунктов к системе и как это сделать?
                   </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    Accordion Item #6
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Да, наша система поддерживает подключение нескольких диспетчерских пунктов. Для этого необходимо следовать инструкции, которую можно найти в нашей документации.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Как рассчитывается стоимость использования системы и есть ли возможность получить скидки или
+                    специальные предложения?
                   </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Стоимость использования системы рассчитывается как ежемесячная плата за каждый лифт, занесенную в нашу систему. Мы также предоставляем скидки и специальные предложения для наших постоянных клиентов, которые используют
+                                        нашу систему на протяжении длительного времени. Для получения информации об актуальных скидках и предложениях следует связаться с нашей службой поддержки.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div class="section-heading text-center">
+                            <h2>FAQ</h2>
+                            <p>
+                                Если не нашли нужный ответ, напишите в службу поддержки, мы ответим в ближайшее время.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-12 col-lg-5">
-            <div class="section-heading text-center">
-              <h2>FAQ</h2>
-              <p>
-                Если не нашли нужный ответ, напишите в службу поддержки, мы ответим в ближайшее время.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Баннер -->
+        <!-- Баннер -->
 
-    <section class="site-section banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="banner__section">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-md-9 col-sm-12">
-                  <div>
-                    <h2>Бесплатный 14-дневный пилотный проект</h2>
-                    <!-- <p>Предоставим демо-доступ для тестирования, чтобы вы оценили все преимущества системы Арпикон.Online</p> -->
-                    <p>Ответим на все Ваши вопросы в процессе тестирования по email: support@arpicon.ru</p>
-                  </div>
+        <section class="site-section banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner__section">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-md-9 col-sm-12">
+                                    <div>
+                                        <h2>Бесплатный 14-дневный пилотный проект</h2>
+                                        <!-- <p>Предоставим демо-доступ для тестирования, чтобы вы оценили все преимущества системы Арпикон.Online</p> -->
+                                        <p>Ответим на все Ваши вопросы в процессе тестирования по email: <strong>support@arpicon.ru</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="banner__button">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#ModalRequestDemo">Запросить демо</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12">
-                  <div class="banner__button">
-                    <a href="#">Запросить демо</a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Обратная связь (Форма) -->
+        <!-- Обратная связь (Форма) -->
 
-    <section class="site-section feedback">
-      <div class="container">
-        <div class="row align-items-center justify-content-center mb-5">
-          <div class="col-md-12 col-sm-12">
-            <div class="section-heading">
-              <h2>Оставьте заявку на Лайв презентацию</h2>
-              <p> Наш сервис – это профессиональный подход и ответственность каждого сотрудника на всех этапах работы.
-              </p>
-            </div>
-            <button type="button" class="feedback__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <section class="site-section feedback">
+            <div class="container">
+                <div class="row align-items-center justify-content-center mb-5">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section-heading">
+                            <h2>Оставьте заявку на Лайв презентацию</h2>
+                            <p> Наш сервис – это профессиональный подход и ответственность каждого сотрудника на всех этапах работы.
+                            </p>
+                        </div>
+                        <button type="button" class="feedback__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Записаться
             </button>
-          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+        <!-- <div class="main-footer__nav">
+            <div class="container">
+                <div class="row justify-content-between footer-nav">
+                    <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
+                        <img class="mb-4" src="img/logo-white.svg" width="150" alt="logo">
+                        <p>© 2022 ООО «Арпикон»</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
+                                <h3>Компания</h3>
+                                <ul class="text-center list-unstyled mb-lg-0">
+                                    <li><a href="#" class="text-decoration-none">Контакты</a></li>
+                                    <li><a href="#" class="text-decoration-none">Реквизиты</a></li>
+                                    <li><a href="#" class="text-decoration-none">Политика конфиденциальности</a></li>
+                                    <li><a href="#" class="text-decoration-none">Пользовательское соглашение</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
+                                <h3>Продукты</h3>
+                                <ul class="text-center list-unstyled mb-lg-0">
+                                    <li><a href="#" class="text-decoration-none">Арпикон.Онлайн</a></li>
+                                    <li><a href="#" class="text-decoration-none">Арпикон.Сервис</a></li>
+                                    <li><a href="#" class="text-decoration-none">Арпикон.Монтаж</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="main-footer__social">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p>© 2023 ООО «Арпикон». Все права защищены</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <ul class="list-unstyled mb-lg-0 justify-content-center">
+                                    <li>
+                                        <a href="tel:+7(922)441-7711">
+                                            <img src="img/social/telephone.svg" width="22" height="22" alt="">
+                                            <span>+7(922)441-7711</span>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">
+                                            <img src="img/social/mail.svg" width="25" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/social/telegram.svg" width="25" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/social/whatsapp.svg" width="25" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/social/skype.svg" width="25" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/social/youtube.svg" width="25" alt="">
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-
-  </main>
-
-  <footer class="main-footer">
-    <div class="main-footer__nav">
-      <div class="container">
-        <div class="row justify-content-between footer-nav">
-          <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
-            <img class="mb-4" src="img/logo-white.svg" width="150" alt="logo">
-            <p>© 2022 ООО «Арпикон»</p>
-          </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
-                <h3>Компания</h3>
-                <ul class="text-center list-unstyled mb-lg-0">
-                  <li><a href="#" class="text-decoration-none">Контакты</a></li>
-                  <li><a href="#" class="text-decoration-none">Реквизиты</a></li>
-                  <li><a href="#" class="text-decoration-none">Политика конфиденциальности</a></li>
-                  <li><a href="#" class="text-decoration-none">Пользовательское соглашение</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-6 mt-6 mt-md-0 mt-lg-0">
-                <h3>Продукты</h3>
-                <ul class="text-center list-unstyled mb-lg-0">
-                  <li><a href="#" class="text-decoration-none">Арпикон.Онлайн</a></li>
-                  <li><a href="#" class="text-decoration-none">Арпикон.Сервис</a></li>
-                  <li><a href="#" class="text-decoration-none">Арпикон.Монтаж</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="main-footer__social">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <p>© 2023 ООО «Центр» ИНН 8602292740 - Арпикон Онлайн. Все права защищены</p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="row align-items-center">
-              <div class="col-12">
-                <ul class="list-unstyled mb-lg-0 justify-content-center">
-                  <li>
-                    <a href="#">
-                      <img src="img/social/mail.svg" width="25" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/social/telegram.svg" width="25" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/social/whatsapp.svg" width="25" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/social/skype.svg" width="25" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/social/youtube.svg" width="25" alt="">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Записаться на лайв презентацию</h5>
-        </div>
-        <div class="modal-body">
-          <form class="form" method="post">
-            <div class="form__field">
-              <label class="form__title form__title--fio" for="fio">ФИО <span>*</span></label>
-              <input type="text" name="fio" id="fio" required>
-            </div>
-            <div class="form__field">
-              <label class="form__title form__title--organization" for="organization">Организация <span>*</span></label>
-              <input type="text" name="organization" id="organization" required>
-            </div>
-            <div class="form__field">
-              <label class="form__title form__title--city" for="city">Город <span>*</span></label>
-              <input type="text" name="city" id="city" required>
-            </div>
-            <div class="form__field">
-              <label class="form__title form__title--email" for="email">Email <span>*</span></label>
-              <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form__field">
-              <label class="form__title form__title--phone" for="phone">Телефон</label>
-              <input type="tel" name="phone" id="phone">
-            </div>
-            <div class="form__field form__radio">
-              <p>Сколько объектов (лифтов)?</p>
-              <label for="500">
+    <!-- Modal Live Presentation -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Записаться на лайв презентацию</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="form" method="post">
+                        <div class="form__field">
+                            <label class="form__title form__title--fio" for="fio">ФИО <span>*</span></label>
+                            <input type="text" name="fio" id="fio" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--organization" for="organization">Организация <span>*</span></label>
+                            <input type="text" name="organization" id="organization" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--city" for="city">Город <span>*</span></label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--email" for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--phone" for="phone">Телефон</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="form__field form__radio">
+                            <p>Сколько объектов (лифтов)?</p>
+                            <label for="500">
                 <input class="visually-hidden" type="radio" name="objects" id="500" value="500">
                 <span>до 500</span>
               </label>
-              <label for="1000">
+                            <label for="1000">
                 <input class="visually-hidden" type="radio" name="objects" id="1000" value="1000">
                 <span>до 1000</span>
               </label>
-              <label for="500">
+                            <label for="500">
                 <input class="visually-hidden" type="radio" name="objects" id="2000" value="2000">
                 <span>до 2000</span>
               </label>
-              <label for="500">
+                            <label for="500">
                 <input class="visually-hidden" type="radio" name="objects" id="3000" value="3000">
                 <span>3000+</span>
               </label>
+                        </div>
+                        <div class="form__field form__comment">
+                            <label class="form__title" for="comment">Комментарий</label>
+                            <textarea name="comment" id="comment"></textarea>
+                        </div>
+                        <button type="submit">Записаться</button>
+                    </form>
+                </div>
             </div>
-            <div class="form__field form__comment">
-              <label class="form__title" for="comment">Комментарий</label>
-              <textarea name="comment" id="comment"></textarea>
-            </div>
-            <button type="submit">Записаться</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js" type="module"></script>
+    <!-- Modal Demo request -->
+
+    <div class="modal fade" id="ModalRequestDemo" tabindex="-1" aria-labelledby="ModalRequestDemoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalRequestDemoLabel">Запросить демо</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="form" method="post">
+                        <div class="form__field">
+                            <label class="form__title form__title--fio" for="fio">ФИО <span>*</span></label>
+                            <input type="text" name="fio" id="demo-fio" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--organization" for="organization">Организация <span>*</span></label>
+                            <input type="text" name="organization" id="demo-organization" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--city" for="city">Город <span>*</span></label>
+                            <input type="text" name="city" id="demo-city" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--email" for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="demo-email" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__title form__title--phone" for="phone">Телефон</label>
+                            <input type="tel" name="phone" id="demo-phone">
+                        </div>
+                        <div class="form__field form__radio">
+                            <p>Сколько объектов (лифтов)?</p>
+                            <label for="500">
+              <input class="visually-hidden" type="radio" name="objects" id="500" value="500">
+              <span>до 500</span>
+            </label>
+                            <label for="1000">
+              <input class="visually-hidden" type="radio" name="objects" id="1000" value="1000">
+              <span>до 1000</span>
+            </label>
+                            <label for="500">
+              <input class="visually-hidden" type="radio" name="objects" id="2000" value="2000">
+              <span>до 2000</span>
+            </label>
+                            <label for="500">
+              <input class="visually-hidden" type="radio" name="objects" id="3000" value="3000">
+              <span>3000+</span>
+            </label>
+                        </div>
+                        <div class="form__field form__comment">
+                            <label class="form__title" for="comment">Комментарий</label>
+                            <textarea name="comment" id="demo-comment"></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
