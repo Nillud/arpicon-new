@@ -1160,6 +1160,26 @@ input {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.gallery .carousel ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery .carousel ul li {
+  display: flex;
+  align-items: center;
+  height: 130px;
+}
+.gallery .carousel ul li img {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: auto;
+}
+.gallery .carousel .carousel-control-prev,
+.gallery .carousel .carousel-control-next {
+  display: none;
+}
 @media (max-width: 1439px) {
   .gallery h2 {
     font-size: 30px;
