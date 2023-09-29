@@ -724,7 +724,8 @@ input {
 .stages ul li p {
   font-size: 16px;
 }
-.stages button {
+.stages button,
+.stages a {
   max-width: 200px;
   padding: 10px 16px;
   background-color: #316AFF;
@@ -732,7 +733,8 @@ input {
   font-weight: bold;
   transition: all 1s ease-in-out;
 }
-.stages button:hover {
+.stages button:hover,
+.stages a:hover {
   color: #316AFF;
   background-color: #ffffff;
   border: 1px solid #316AFF;
