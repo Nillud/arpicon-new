@@ -160,6 +160,10 @@ input {
 .intro {
   padding-top: 190px;
   padding-bottom: 150px;
+  background-image: url('../../img/home-shape.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -140px;
 }
 .intro .intro-content {
   width: 100%;
@@ -372,6 +376,9 @@ input {
   }
 }
 @media (max-width: 767px) {
+  .intro {
+    background: none;
+  }
   .intro img {
     padding: 10px;
     height: auto;
