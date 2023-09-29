@@ -385,6 +385,9 @@ input {
     font-size: 18px;
     margin-bottom: 0;
   }
+  .intro__footer__buttons {
+    margin-bottom: 10px;
+  }
   .intro__footer__buttons button,
   .intro__footer__buttons a {
     padding: 10px 16px;
@@ -409,6 +412,7 @@ input {
   }
   .intro__footer--mobile a {
     margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .intro ul {
     display: grid;
@@ -1396,6 +1400,12 @@ input {
   }
   .price-slider label input {
     transition: all 0.6s ease-in-out;
+  }
+  .price-slider .profitable {
+    right: 8px;
+    top: 8px;
+    padding: 1px 2px;
+    font-size: 12px;
   }
 }
 @media (max-width: 1439px) {
