@@ -574,7 +574,7 @@ input {
 }
 .main-footer__nav {
   border-bottom: 1px solid #ffffff;
-  padding-bottom: 60px;
+  padding: 30px 0;
 }
 .main-footer p {
   color: #ffffff;

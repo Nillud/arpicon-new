@@ -9,17 +9,17 @@ const sliderYear = document.querySelector('#year');
 const prices = document.querySelectorAll('.price-value');
 
 const pircesValuesMonth = {
+    25: 25,
     20: 20,
     15: 15,
-    10: 10,
-    8: 8
+    10: 10
 };
 
 const pircesValuesYear = {
+    25: 18,
     20: 15,
-    15: 11.25,
-    10: 7.5,
-    8: 6
+    15: 12,
+    10: 6
 };
 
 // const closeExperienceSections = () => {
